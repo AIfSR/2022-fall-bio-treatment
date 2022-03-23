@@ -14,14 +14,14 @@ To understand seroconversion, let us first understand what does a vaccine contai
 The flu vaccine contains dead/inactivated influenza virus for 4 different strains. Once the vaccine is administered into the body, there are two immune responses. One that generates *B cells* and the other that generates *killer T cells*. B cells further produce antibodies that prevent the virus from entering into our cells. But if a virus does enter the cell, then these antibodies are useless, and killer T cells come into the picture by identifying infected cells and destroying them altogether. Hence, the effectiveness of a vaccine and protection from the disease, both depends on *antibodies* as well as *killer T cells*.  
 
 
-<img src="/ImmuneResponse.png">
+<img src="/images/ImmuneResponse.png">
 
 
 
 
 It takes around 3-4 weeks to produce antibodies by the immune system, and hence our dataset records the antibodies present in the patient on Day 0, that is the day of vaccination, before administering the vaccine. And then, on Day 28, which is 28 days after day of vaccination.
 
-<img src="/timeline.png" width="550" height="150">
+<img src="/images/timeline.png" width="550" height="150">
 
 
 Where *seroconversion* fits in all this is that it quantifies the increase in antibodies after being given the vaccine. Since, it is the measure of antibodies in the immune system, it is said to have a *correlation* with the efficacy and effectiveness of the vaccine. *Seroconversion* specifically measures the fold rise/increase in the antibodies on Day 28 compared to Day 0, specifically in our dataset. Beyond a certain threshold, the increase in antibodies demonstrates a very high probability of protection from the disease.   
@@ -51,16 +51,16 @@ First, let's explore all the columns that can serve as our target variable. Foll
  
 We will look into a few of them starting with **seroconversion**, which is referred to as *Composite_seroconversion* in our dataset, and *Composite_SC_category*. *Composite seroconversion* represents the the sum of the seroconversion across all the four strains, and *Composite_SC_category* contains the three categories(high, low, and none), as mentioned above. 
 
-<img src="/Seroconversion.png" width="700" height="350">
+<img src="/images/Seroconversion.png" width="700" height="350">
 
 We can see that the values for composite seroconversion are right-skewed, and that the no. of patients with high seroconversion(>=8.0) are much lesser than the rest of the categories. Looking at the bar chart for composite seroconversion category, we can see that there is class imbalance as well, patients with high seroconversion are lesser than 50% of the entire cohort. 
 
 Moving on, let us see the distribution of seroconversion in patients for each individual strain. 
-<img  src="/Seroconversion_Strains_updated.png" width="700" height="600">
+<img  src="/images/Seroconversion_Strains_updated.png" width="700" height="600">
 
 The four strains are, *H1N1, H3N2, IBV Yam, IBV Vic*, where H1N1 and H3N2 are two variations of *type A influenza virus*, and the other two are variations of *type B influenza virus*. Categorical classification exists for these as well, where the cutoff for *high* seroconversion is 2.0 and above. Seroconversion that is more than 0 and less than 2.0 is considered to be *low*, and anything that is 0 and below is considered to be *none*. We can see the class distribution for each of these 3 classes for each of the 4 strains. 
 
-<img  src="/SC_Category_Strains.png" width="650" height="600">
+<img  src="/images/SC_Category_Strains.png" width="650" height="600">
 
 
 
@@ -68,7 +68,7 @@ The four strains are, *H1N1, H3N2, IBV Yam, IBV Vic*, where H1N1 and H3N2 are tw
 Let us see, in general, for how many strains do patients experience high seroconversion. 
 
 
-<img  src="/NumStrainsHighSero.png" width="364" height="324">
+<img  src="/images/NumStrainsHighSero.png" width="364" height="324">
  
 We can see that most of the patients that record high seroconversion, record high seroconversion for only 1 strain as compared to all 4. 
 
