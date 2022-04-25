@@ -91,3 +91,12 @@ Having looked at the target values, let us look into our predictors. Following a
 The patients in our dataset have varying characteristics with their ages ranging from 11 years - 85 years. Along with their ages, we also have information about their BMI which belongs to one of the following categories: *Lean, Normal, Normal, Obese, Obese, Overweight*. We also know if they reported any comorbidities, what race they belong to, whether they were previously vaccinated or not, and if they were, were they vaccinated 1 year ago or 3 years ago. If they were previously vaccinated, we also know what month they were vaccinated in and whether they had received a high or a standard dose of the vaccine. And, lastly, we have the titer values of the anitbodies present per strain in the patient, before being given the flu shot. 
  
  
+# Experiments
+
+Given that our dataset is very small, and the most important necessity of the project is the interpretability of predictions made by the models, we will focus only on machine learning models, and not on deep learning. 
+ 
+For our task of predicting the seroconversion observed in a patient, we further clubbed low and none seroconversion classes together in a class called nonhigh. After this regrouping, the class imbalance of our dataset has further changed to the following.  
+
+Now our task gets defined as a binary classification task. We have used the following models and performed cross validation to find the best set of hyperparameters given our dataset and documented the results. 
+ 
+Performance measure: Given that in our dataset, the classes are not equally distributed, the performance measures that we use to compare our models are F1-measure, Precision, Recall, and AUC for the positive class(i.e., high seroconversion). 
