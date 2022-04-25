@@ -97,6 +97,8 @@ Given that our dataset is very small, and the most important necessity of the pr
  
 For our task of predicting the seroconversion observed in a patient, we further clubbed low and none seroconversion classes together in a class called nonhigh. After this regrouping, the class imbalance of our dataset has further changed to the following.  
 
+<img  src="/images/FinalDistribution.png" width="364" height="324">
+
 Now our task gets defined as a binary classification task. We have used the following models and performed cross validation to find the best set of hyperparameters given our dataset and documented the results. 
  
 Performance measure: Given that in our dataset, the classes are not equally distributed, the performance measures that we use to compare our models are F1-measure, Precision, Recall, and AUC for the positive class(i.e., high seroconversion). 
