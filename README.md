@@ -99,6 +99,6 @@ For our task of predicting the seroconversion observed in a patient, we further 
 
 <img  src="/images/FinalDistribution.png" width="364" height="324">
 
-Now our task gets defined as a binary classification task. We have used the following models and performed cross validation to find the best set of hyperparameters given our dataset and documented the results. 
+Now, our task gets defined as a binary classification task. We have used the following models and performed cross validation to find the best set of hyperparameters given our dataset and documented the results. 
  
 Performance measure: Given that in our dataset, the classes are not equally distributed, the performance measures that we use to compare our models are F1-measure, Precision, Recall, and AUC for the positive class(i.e., high seroconversion). 
