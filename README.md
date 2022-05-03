@@ -111,8 +111,8 @@ Open the notebook **RFC_weight_exp.ipynb** and:
 
 1. In the first cell, make sure the file name is correct. 
 ```
-
-filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"  
+filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"
+random_state = 100
 ```
 
 2. Change the directory to where the file is located on your drive. 
