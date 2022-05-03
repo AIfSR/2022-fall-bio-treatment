@@ -119,7 +119,7 @@ random_state = 100
 %cd /content/drive/MyDrive/Colab Notebooks/vogel 
 ```
 
-3. Go to the section labeled Train Wrapper and run the cell 
+3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell 
  
  
 # Interpreting the output files: 
