@@ -102,3 +102,15 @@ For our task of predicting the seroconversion observed in a patient, we further 
 Now, our task gets defined as a binary classification task. We have used the following models and performed cross validation to find the best set of hyperparameters given our dataset and documented the results. 
  
 Performance measure: Given that in our dataset, the classes are not equally distributed, the performance measures that we use to compare our models are F1-measure, Precision, Recall, and AUC for the positive class(i.e., high seroconversion). 
+
+
+# How to run the code: 
+ 
+To run the code and replicate the results, follow the following steps. 
+Open the notebook RFC_weight_exp.ipynb and: 
+1. In the first cell, make sure the file name is correct. 
+2. Change the directory to where the file is located on your drive. 
+3. Go to the section labeled Train Wrapper and run the cell 
+ 
+ 
+# Interpreting the output files: 
