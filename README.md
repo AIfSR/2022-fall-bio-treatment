@@ -120,8 +120,6 @@ random_state = 100
 ```
 
 3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. 
- 
- * Understanding the code:
 
  * The first part reads the dataset and creates a dataframe, preprocesses the dataset, and saves the train and test split respectively in the already  set directory.
 ```
