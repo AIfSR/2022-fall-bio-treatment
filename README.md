@@ -107,7 +107,9 @@ Performance measure: Given that in our dataset, the classes are not equally dist
 # How to run the code: 
  
 To run the code and replicate the results, follow the following steps. 
-Open the notebook RFC_weight_exp.ipynb and: 
+Open the notebook ```
+RFC_weight_exp.ipynb
+``` and: 
 1. In the first cell, make sure the file name is correct. 
 2. Change the directory to where the file is located on your drive. 
 3. Go to the section labeled Train Wrapper and run the cell 
