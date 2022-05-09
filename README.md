@@ -104,7 +104,7 @@ Now, our task gets defined as a binary classification task. We have used the fol
 Performance measure: Given that in our dataset, the classes are not equally distributed, the performance measures that we use to compare our models are F1-measure, Precision, Recall, and AUC for the positive class(i.e., high seroconversion). 
 
 
-# How to run the code: 
+# Running the code: 
  
 To run the code and replicate the results, follow the following steps. 
 Open the notebook **RFC_weight_exp.ipynb** and: 
@@ -126,6 +126,7 @@ dirname = "/content/drive/MyDrive/Vogel"
 ```
 <br>
 Once the directory has been set, you can choose any model of your choice, or choose all the models as well by adding the names in models list. Similarly, choose the metric of your choice to get the corresponding optimal hyperparameters for. Please note, the only choices of metric are: f1, precision, recall, accuracy, average_precision, and roc_auc. The code only works for one metric at a time, and not with a list of metrics.
+
 ```
 models = ["RFC", "SVC", "LOGR", "SGDC"]
 metric = ["f1"]
