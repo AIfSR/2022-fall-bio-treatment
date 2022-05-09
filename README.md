@@ -138,5 +138,7 @@ metric = ["f1"]
  
 # Training a model of your own choice.
 
+If you wish to train only one model and find the optimal set of hyperparameters for the same, you can add the model name in the config cell un section 3. Once the model is trained, follow the steps 4-7 stated above to find the best hyperparameters and save the predictions on the test set.
+
 
 # Generating test predictions for any of the already trained models.
