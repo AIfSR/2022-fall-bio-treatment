@@ -131,7 +131,7 @@ Once the directory has been set, you can choose any model of your choice, or cho
 models = ["RFC", "SVC", "LOGR", "SGDC"]
 metric = ["f1"] 
 ```
-5. Once the directory is set and the models and metric are chosen, run the next cell. This cell will generate .txt files containing the best set of hyperparameters given the chosen metric. The files generated are saved as _model_name__best_hyperparameters_wrt_metric.txt. For eg: RFC_best_hyperparameters_wrt_f1.txt.
+5. Once the directory is set and the models and metric are chosen, run the next cell. This cell will generate .txt files containing the best set of hyperparameters given the chosen metric. The files generated are saved as [model_name]_best_hyperparameters_wrt_[metric].txt. For eg: RFC_best_hyperparameters_wrt_f1.txt.
 
 6. To generate predictions on the test set, use the hyperparameters from the above saved txt file and input them in the first cell in section 5.
 7. Run the cell below to generate predictions on the test set.
