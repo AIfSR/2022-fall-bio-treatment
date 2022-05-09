@@ -111,16 +111,7 @@ Open the notebook **RFC_weight_exp.ipynb** and:
 
 1. In the second cell, make sure the name of your dataset is correct, as well as change the directory to where the file is located on your drive.
 ```
-######################## general config settings #######################
-filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"  # path for default dataset. Will randomly split the data into a test set and a train set. 
-original_split = False # If The original split is needed, please set original_split to True.
-filename_train = "" # alternative way to specify train dataset. If set to non-empty string, this has the highest priority.
-filename_test = "" # alternative way to specify test dataset. If set to non-empty string, this has the highest priority.
-random_state = 100 # random seed for replicability
-out_dir = "" # path of desired output directory
-## change directory to desired working directory below:
-%cd /content/drive/MyDrive/Vogel 
-########################################################################
+filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"  # path for default dataset
 ```
 
 
