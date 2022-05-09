@@ -109,7 +109,7 @@ Performance measure: Given that in our dataset, the classes are not equally dist
 To run the code and replicate the results, follow the following steps. 
 Open the notebook **RFC_weight_exp.ipynb** and: 
 
-1. In the first cell, make sure the file name is correct. 
+1. In the first cell, make sure the name of your dataset is correct. 
 ```
 filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"
 random_state = 100
