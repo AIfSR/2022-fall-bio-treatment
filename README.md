@@ -118,7 +118,7 @@ filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - fo
 ## change directory to desired working directory below:
 %cd /content/drive/MyDrive/Vogel 
 ```
-3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. 
+3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. <br>
    Running this cell trains all the models ad searches for the optimal set of hyperparameters. The output of the cell should generate 19 csv files per model and the associated performance measures and hyperparameters.
    
 
