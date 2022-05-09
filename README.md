@@ -120,8 +120,16 @@ filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - fo
 3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. <br><br>
    Running this cell trains all the models ad searches for the optimal set of hyperparameters. The output of the cell should generate 19 csv files per model and the associated performance measures and hyperparameters.
    
-4. To find the best set of hyperparameters, input your metric of choice in the second cell in the section labeled **Driver Codes for CV hyper-parameter tuning**.
-
+4. To find the best set of hyperparameters, set the dirname to the directory where the output files were saved. By default, it should be the same directory as configured in step 2.
+```
+dirname = "/content/drive/MyDrive/Vogel"
+```
+<br>
+Once the directory has been set, you can choose any model of your choice, or choose all the models as well by adding the names in models list. Similarly, choose the metric of your choice to get the corresponding optimal hyperparameters for. Please note, the only choices of metric are: f1, precision, recall, accuracy, average_precision, and roc_auc. The code only works for one metric at a time, and not with a list of metrics.
+```
+models = ["RFC", "SVC", "LOGR", "SGDC"]
+metric = ["f1"]
+```
  
  
 # Training a model of your own choice.
