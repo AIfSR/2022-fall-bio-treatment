@@ -109,15 +109,20 @@ Performance measure: Given that in our dataset, the classes are not equally dist
 To run the code and replicate the results, follow the following steps. 
 Open the notebook **RFC_weight_exp.ipynb** and: 
 
-1. In the first cell, make sure the name of your dataset is correct. 
+1. In the second cell, make sure the name of your dataset is correct, as well as change the directory to where the file is located on your drive.
 ```
-filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"
-random_state = 100
+######################## general config settings #######################
+filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"  # path for default dataset. Will randomly split the data into a test set and a train set. 
+original_split = False # If The original split is needed, please set original_split to True.
+filename_train = "" # alternative way to specify train dataset. If set to non-empty string, this has the highest priority.
+filename_test = "" # alternative way to specify test dataset. If set to non-empty string, this has the highest priority.
+random_state = 100 # random seed for replicability
+out_dir = "" # path of desired output directory
+## change directory to desired working directory below:
+%cd /content/drive/MyDrive/Vogel 
+########################################################################
 ```
-2. Change the directory to where the file is located on your drive. 
-```
-%cd /content/drive/MyDrive/Colab Notebooks/vogel 
-```
+
 
 3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. 
 
