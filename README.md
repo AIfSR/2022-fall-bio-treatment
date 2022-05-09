@@ -125,11 +125,11 @@ filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - fo
 dirname = "/content/drive/MyDrive/Vogel"
 ```
 <br>
-Once the directory has been set, you can choose any model of your choice, or choose all the models as well by adding the names in models list. Similarly, choose the metric of your choice to get the corresponding optimal hyperparameters for. Please note, the only choices of metric are: f1, precision, recall, accuracy, average_precision, and roc_auc. The code only works for one metric at a time, and not with a list of metrics.
+Once the directory has been set, you can choose any model of your choice, or choose all the models as well, by adding the names in the list called models. Similarly, choose the metric of your choice to get the corresponding optimal hyperparameters for. Please note, the only choices of the metric are: f1, precision, recall, accuracy, average_precision, and roc_auc. The code only works for one metric at a time, and will not support a list of metrics.
 
 ```
 models = ["RFC", "SVC", "LOGR", "SGDC"]
-metric = ["f1"]
+metric = ["f1"] 
 ```
  
  
