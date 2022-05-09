@@ -113,17 +113,13 @@ Open the notebook **RFC_weight_exp.ipynb** and:
 ```
 filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"  # path for default dataset
 ```
-
-
+2. Change the working directory to where the dataset is located.
+```
+## change directory to desired working directory below:
+%cd /content/drive/MyDrive/Vogel 
+```
 3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. 
 
- * The first part reads the dataset and creates a dataframe, preprocesses the dataset, and saves the train and test split respectively in the already  set directory. Please look into the notebook for understanding the exact preprocessing steps.
-```
-df = pd.read_csv(filename, sep="\t")
-train_df, test_df = basic_preprocessing_random(df, normalize=True, random_state=random_state)
-train_df.to_csv("new_train.csv",sep="\t")
-test_df.to_csv("new_test.csv", sep="\t")
-```
  
  
 # Interpreting the output files: 
