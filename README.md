@@ -113,18 +113,18 @@ Open the notebook **RFC_weight_exp.ipynb** and:
 ```
 filename = "fluvacc metadata - UGA1-5 - 1368 entries with clear vacc status - for figures.txt"  # path for default dataset
 ```
-2. Change the working directory to where the dataset is located.
+2. In the same cell as above, change the working directory to where the dataset is located.
 ```
-## change directory to desired working directory below:
 %cd /content/drive/MyDrive/Vogel 
 ```
-3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. <br>
+3. Go to the section labeled **Driver Codes for CV hyper-parameter tuning** and run the cell. <br><br>
    Running this cell trains all the models ad searches for the optimal set of hyperparameters. The output of the cell should generate 19 csv files per model and the associated performance measures and hyperparameters.
    
+4. To find the best set of hyperparameters, input your metric of choice in the second cell in the section labeled **Driver Codes for CV hyper-parameter tuning**.
 
  
  
-# Interpreting the output files: 
+# Training a model of your own choice.
 
 
 # Generating test predictions for any of the already trained models.
