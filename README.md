@@ -103,6 +103,9 @@ Now, our task gets defined as a binary classification task. We have used the fol
  
 Performance measure: Given that in our dataset, the classes are not equally distributed, the performance measures that we use to compare our models are F1-measure, Precision, Recall, and AUC for the positive class(i.e., high seroconversion). 
 
+### Baseline model
+
+The baseline model trained in the paper performs....
 
 # Running the code: 
  
